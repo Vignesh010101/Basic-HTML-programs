@@ -1,0 +1,122 @@
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: #FFCCCB;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> Student Registeration Form</h1> </center>  
+  <hr>  
+  <label> User Name </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />  
+<input type="text" name="lastname" placeholder= "lastname" size="15" required />
+<div>  
+<label>   
+Course :  
+</label>   
+  
+<select>  
+<option value="Class">Select</option>  
+<option value="Kindergarten">BCA</option>  
+<option value="LKG">BSc</option>  
+<option value="UKG">Bcom</option>  
+<option value="Ist">BA</option>  
+<option value="IInd">MCA</option>  
+<option value="IIIrd">MSc</option>  
+<option value="IVth">Mcom</option>
+</select>  
+</div>  
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other   
+</div> 
+<div>
+<label><b>Skills:</b></label>
+<pre>
+<input type='checkbox' name='skills' required><b>ASP.net</b>
+<input type='checkbox' name='skills' required><b>Java</b>
+<input type='checkbox' name='skills' required><b>HTML</b>
+<input type='checkbox' name='skills' required><b>CSS</b>
+<input type='checkbox' name='skills' required><b>JavaScript</b>
+<input type='checkbox' name='skills' required><b>Python</b>
+<input type='checkbox' name='skills' required><b>PERL</b>
+<input type='checkbox' name='skills' required><b>C Programming</b>
+<input type='checkbox' name='skills' required><b>C plus plus</b>
+<input type='checkbox' name='skills' required><b>R programming</b>
+<input type='checkbox' name='skills' required><b>Fortron</b>
+<input type='checkbox' name='skills' required><b>Kotlin</b>
+<input type='checkbox' name='skills' required><b>GIT</b>
+<input type='checkbox' name='skills' required><b>Ruby</b>
+<input type='checkbox' name='skills' required><b>GO language</b>
+<input type='checkbox' name='skills' required><b>PHP</b>
+<input type='checkbox' name='skills' required><b>MySql</b>
+<input type='checkbox' name='skills' required><b>Android Programming</b>
+</pre>
+</div> 
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
+Current Address :  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+    <button type="submit" class="registerbtn">Register</button>    
+</form>  
+</body>  
+</html> 
